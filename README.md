@@ -4,7 +4,7 @@
 # 장기기억 AI Agent
 
 ## 메모리 작동방식
-<img src="https://github.com/user-attachments/assets/7d0e3927-bf20-44fc-a9c9-0fb2c89c0ff2" width="500">
+<img src="https://github.com/user-attachments/assets/6780e75e-a2be-44f0-b95c-c19186aa3cb6" width="500">
 
 
 ## 설치 방법
@@ -14,7 +14,7 @@
    uv add openai-agents openai streamlit python-dotenv 
    ```
 
-2. 환경 변수 파일(.env)을 생성한 후, mem0와 OpenAI API 키를 입력하기
+2. 환경 변수 파일(.env)을 생성한 후, [mem0](https://mem0.ai/old-home)와 OpenAI API 키를 입력하기
    ```env
    OPENAI_API_KEY=여기에_발급받은_키_입력
    MEM0_API_KEY=여기에_발급받은_키_입력
