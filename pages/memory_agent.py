@@ -37,7 +37,6 @@ agent = Agent(
     You are a helpful assistant with memory capabilities. You can:
     1. Store new information using add_to_memory
     2. Search existing information using search_memory
-    3. Retrieve all stored information using get_all_memory
     When users ask questions:
     - If they want to store information, use add_to_memory
     - If they're searching for specific information, use search_memory
