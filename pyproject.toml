@@ -1,0 +1,12 @@
+[project]
+name = "memory-mcp-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "openai>=1.93.0",
+    "openai-agents>=0.1.0",
+    "python-dotenv>=1.1.1",
+    "streamlit>=1.46.1",
+]

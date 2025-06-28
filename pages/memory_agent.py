@@ -6,7 +6,7 @@ from agents import Agent, Runner
 from dotenv import load_dotenv
 from agents.mcp import MCPServerSse
 import json
-
+import os
 
 load_dotenv()
 # Windows 호환성
@@ -14,7 +14,7 @@ if sys.platform == "win32":
     asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
 
 # ✅ SSE URL 고정값 (하드코딩)
-SSE_URL = "https://mcp.supermemory.ai/54cRflqVFc0nRrblkTCtk/sse"
+SSE_URL = os.getenv("MEMORY_MCP_URL")
 
 # ✅ SSE 연결
 def connect_sse():
