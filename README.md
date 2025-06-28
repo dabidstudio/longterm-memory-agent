@@ -3,7 +3,8 @@
 
 # 장기기억 AI Agent
 
-## 작동방식
+## 메모리 작동방식
+<img src="https://github.com/user-attachments/assets/7d0e3927-bf20-44fc-a9c9-0fb2c89c0ff2" width="500">
 
 
 ## 설치 방법
