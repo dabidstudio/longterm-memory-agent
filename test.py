@@ -1,6 +1,9 @@
 import os
 import asyncio
 from mem0 import AsyncMemoryClient
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Mem0 클라이언트 초기화 및 사용자 ID 설정
 client = AsyncMemoryClient(api_key=os.getenv("MEM0_API_KEY"))
@@ -34,13 +37,13 @@ async def delete_all_memory() -> str:
 
 async def main():
     # 예제 1: 메모리 추가하기
-    print("\n=== 메모리 추가하기 ===")
+    # print("\n=== 메모리 추가하기 ===")
     
-    await add_to_memory("오늘 서울의 날씨가 정말 좋네요. 하늘도 맑고 기온도 딱 좋아서 산책하기 좋은 날씨입니다. 이런 날에는 한강공원에 가서 피크닉을 하면 좋을 것 같아요.")
+    # await add_to_memory("오늘 서울의 날씨가 정말 좋네요. 하늘도 맑고 기온도 딱 좋아서 산책하기 좋은 날씨입니다. 이런 날에는 한강공원에 가서 피크닉을 하면 좋을 것 같아요.")
     
     # await add_to_memory("파이썬으로 새로운 프로젝트를 시작했는데 정말 재미있습니다. 특히 비동기 프로그래밍과 API 통합하는 부분을 배우고 있는데, 처음에는 어려웠지만 점점 이해가 되면서 흥미가 생기네요. 다음에는 데이터 분석 라이브러리도 공부해보고 싶습니다.")
     
-    # # 예제 2: 메모리 검색하기
+    # # # 예제 2: 메모리 검색하기
     # print("\n=== 메모리 검색하기 ===")
     # search_result = await search_memory("날씨")
     # print("'날씨' 검색 결과:")
@@ -51,7 +54,7 @@ async def main():
     # all_memories = await get_all_memory()
     # print("저장된 모든 메모리:")
     # print(all_memories)
-
+    await delete_all_memory()
 if __name__ == "__main__":
     # MEM0_API_KEY 환경 변수가 설정되어 있는지 확인
     if not os.getenv("MEM0_API_KEY"):
