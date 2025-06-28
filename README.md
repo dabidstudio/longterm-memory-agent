@@ -13,16 +13,14 @@
    uv add openai-agents openai streamlit python-dotenv 
    ```
 
-2. 환경 변수 파일(.env)을 생성한 후, OpenAI API 키를 입력하기
- - https://mcp.supermemory.ai 에서 MCP URL 입력
+2. 환경 변수 파일(.env)을 생성한 후, mem0와 OpenAI API 키를 입력하기
    ```env
    OPENAI_API_KEY=여기에_발급받은_키_입력
-   MEMORY_MCP_URL=내 URL 입력
+   MEM0_API_KEY=여기에_발급받은_키_입력
    ```
 
 ## 실행
 
-Streamlit 앱 실행  
    ```bash
    uv run streamlit run agent.py
    ```
